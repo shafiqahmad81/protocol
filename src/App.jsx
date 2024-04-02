@@ -282,13 +282,6 @@ function App() {
                       Get Started
                     </button>
                   </div>
-                  <div className="relative lg:col-span-3">
-                    <img
-                      className="relative z-20 max-w-[630px]"
-                      src="../src/assets/icons/banner.png"
-                      alt="banar image"
-                    />
-                  </div>
                 </div>
               </div>
             </article>
