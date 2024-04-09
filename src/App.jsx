@@ -266,26 +266,199 @@ function App() {
             </div>
             {/* Green to Overlay end */}
             <article>
-              <div className="relative mx-auto px-4">
-                <div className="grid grid-cols-1 lg:grid-cols-5 mx-auto items-center max-w-[40rem] gap-x-8 gap-y-16 lg:max-w-none">
-                  <div className="flex flex-col items-start lg:col-span-2">
-                    <h1 className="mt-4 text-6xl font-extrabold leading-none tracking-tight text-slate-900 sm:text-5xl sm:leading-[3.5rem]">
+              <div className="relative mx-auto lg:px-4">
+                <div className=" mx-auto max-w-screen-md gap-x-8 gap-y-16 lg:max-w-none">
+                  <div className=" w-full max-w-screen-md mx-auto ">
+                    {/* <h1 className="mt-4 text-6xl font-extrabold leading-none tracking-tight text-slate-900 sm:text-5xl sm:leading-[3.5rem]">
                       Protocol
                     </h1>
                     <p className="mt-6 text-base leading-7 text-slate-700">
                       It doesn`t matter if you have an API if nobody knows how
                       to use it. Teach people the ins and outs of OAuth 2.0 and
                       JWTs in style with Protocol, a beautiful API documentation
-                      template.
+                      template.It doesn`t matter if you have an API if nobody
+                      knows how to use it. Teach people the ins and outs of
+                      OAuth 2.0 and JWTs in style with Protocol, a beautiful API
+                      documentation template.
+                    </p> */}
+                    <h1 className="text-2xl font-bold leading-8 mb-2 text-slate-900 sm:leading-[3.5rem]">
+                      API Documentation
+                    </h1>
+                    <p className="lead">
+                      Use the Protocol API to access contacts, conversations,
+                      group messages, and more and seamlessly integrate your
+                      product into the workflows of dozens of devoted Protocol
+                      users.
                     </p>
-                    <button className="mt-10 inline-flex justify-center rounded-lg bg-slate-900 px-4 py-3 text-sm font-semibold text-white hover:bg-slate-700">
-                      Get Started
-                    </button>
+                    <div className="flex items-center my-16 gap-3">
+                      <button className=" inline-flex justify-center rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold border border-hero-button text-white hover:bg-slate-700">
+                        Quickstart
+                      </button>
+                      <button className=" inline-flex justify-center rounded-full bg-transparent px-4 py-2 text-sm font-semibold border border-[#e5e7eb] text-hero-button hover:bg-slate-700">
+                        Explore SDKs
+                      </button>
+                    </div>
+                    <h2 className=" font-semibold text-lg mt-4 mb-2 leading-7">
+                      Getting started
+                    </h2>
+                    <p className="lead">
+                      To get started, create a new application in your{" "}
+                      <a className=" text-green-1 font-medium" href="#">
+                        developer settings
+                      </a>{" "}
+                      , then read about how to make requests for the resources
+                      you need to access using our HTTP APIs or dedicated client
+                      SDKs. When your integration is ready to go live, publish
+                      it to our{" "}
+                      <a className=" text-green-1 font-medium" href="#">
+                        integrations directory
+                      </a>{" "}
+                      to reach the Protocol community.
+                    </p>
+                    <div className="my-16">
+                      <a className=" font-medium text-sm text-green-1" href="#">
+                        Get your API key
+                      </a>
+                    </div>
+                    <div className="my-16">
+                      <h2 className=" font-semibold text-lg leading-7">
+                        <a href="#">Guides</a>
+                      </h2>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 mt-4 border-t border-zinc-900/5 gap-8 pt-10">
+                        <div>
+                          <h3 className="text-sm font-semibold text-zinc-900">
+                            Authentication
+                          </h3>
+                          <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
+                            Learn how to authenticate your API requests.
+                          </p>
+                          <p className="mt-4">
+                            <a className="flex items-center">
+                              <span className=" text-green-1">Read more</span>
+                              <img
+                                src="../src/assets/icons/rightArrow.svg"
+                                className="relative top-px -mr-1 mt-0.5 h-5 w-5"
+                              />
+                            </a>
+                          </p>
+                        </div>
+                        <div>
+                          <h3 className="text-sm font-semibold text-zinc-900">
+                            Authentication
+                          </h3>
+                          <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
+                            Learn how to authenticate your API requests.
+                          </p>
+                          <p className="mt-4">
+                            <a className="flex items-center">
+                              <span className=" text-green-1">Read more</span>
+                              <img
+                                src="../src/assets/icons/rightArrow.svg"
+                                className="relative top-px -mr-1 mt-0.5 h-5 w-5"
+                              />
+                            </a>
+                          </p>
+                        </div>
+                        <div>
+                          <h3 className="text-sm font-semibold text-zinc-900">
+                            Authentication
+                          </h3>
+                          <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
+                            Learn how to authenticate your API requests.
+                          </p>
+                          <p className="mt-4">
+                            <a className="flex items-center">
+                              <span className=" text-green-1">Read more</span>
+                              <img
+                                src="../src/assets/icons/rightArrow.svg"
+                                className="relative top-px -mr-1 mt-0.5 h-5 w-5"
+                              />
+                            </a>
+                          </p>
+                        </div>
+                        <div>
+                          <h3 className="text-sm font-semibold text-zinc-900">
+                            Authentication
+                          </h3>
+                          <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
+                            Learn how to authenticate your API requests.
+                          </p>
+                          <p className="mt-4">
+                            <a className="flex items-center">
+                              <span className=" text-green-1">Read more</span>
+                              <img
+                                src="../src/assets/icons/rightArrow.svg"
+                                className="relative top-px -mr-1 mt-0.5 h-5 w-5"
+                              />
+                            </a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Resources Section Starts */}
+
+                    <div className="my-16">
+                      <h2 className=" font-semibold text-lg leading-7">
+                        <a href="#">Resources</a>
+                      </h2>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 mt-4 border-t border-zinc-900/5 gap-8 pt-10">
+                        <div className=" bg-zinc-50 rounded-2xl transition-shadow px-4 pb-4 pt-16 hover:shadow-md hover:shadow-zinc-900/5">
+                          <div className="flex h-7 w-7 items-center justify-center rounded-full bg-zinc-900/5 ring-1 ring-zinc-900/25 backdrop-blur-[2px] transition duration-300 group-hover:bg-white/50 group-hover:ring-zinc-900/25">
+                            <img
+                              className="h-5 w-5 fill-zinc-700/10 stroke-zinc-700 transition-colors duration-300 group-hover:stroke-zinc-900"
+                              src="../src/assets/icons/contact.svg"
+                              alt="contact icon"
+                            />
+                          </div>
+                          <h3 className="mt-4 text-sm font-semibold leading-7 text-zinc-900">
+                            Contacts
+                          </h3>
+                          <p className="mt-1 text-sm text-zinc-600">
+                            Learn about the contact model and how to create,
+                            retrieve, update, delete, and list contacts.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Test section start */}
+
+                    <div className="my-16">
+                      <h2 className=" font-semibold text-lg leading-7 mb-2">
+                        Test
+                      </h2>
+                      <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Tempore pariatur repellendus vero doloremque sint,
+                        quod aliquid possimus esse labore maxime quaerat error
+                        enim! Velit incidunt soluta pariatur doloribus hic!
+                        Distinctio earum ea enim repudiandae repellat vero
+                        dignissimos sequi optio nulla explicabo provident ipsum
+                        eaque incidunt, ducimus dolore dolor accusamus.
+                        Exercitationem?
+                      </p>
+                      <p className=" my-6">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quas neque quibusdam vel temporibus tempore eum, odio
+                        odit adipisci similique dolor a illo iusto deserunt
+                        voluptate perspiciatis aliquid ad id sed?
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </article>
           </main>
+          <footer className="flex-auto max-w-screen-md mx-auto space-y-10 pb-16 lg:max-w-none">
+            <div className="relative">
+              <form className=" absolute inset-0 flex items-center justify-center md:justify-start gap-6">
+                <p className="text-sm text-zinc-600 dark:text-zinc-400">
+                  Was this page helpful?
+                </p>
+              </form>
+            </div>
+          </footer>
         </div>
       </div>
     </>
