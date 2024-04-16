@@ -19,7 +19,7 @@ function App() {
           <div className="fixed inset-x-0 top-0 z-50 bg-white bg-white/[var(--bg-opacity-light)] backdrop-blur-sm transition px-4 sm:px-6 lg:left-72 xl:left-80">
             <div className="flex h-14 items-center justify-between gap-12">
               <div className=" absolute inset-x-0 top-full h-px bg-zinc-900/10 transition"></div>
-              <div className="hidden lg:block max-w-md lg:flex-auto">
+              <div className="hidden relative lg:block max-w-md lg:flex-auto">
                 <button className="lg:flex hidden h-8 rounded-full pl-2 pr-3 items-center w-full gap-2 bg-white text-zinc-500 ring-1 ring-zinc-900/10 transition">
                   <img
                     src="../src/assets/icons/search.svg"
@@ -36,6 +36,49 @@ function App() {
                     <kbd>k</kbd>
                   </kbd>
                 </button>
+                {/* result card */}
+                <div className="absolute top-12 left-03 bg-white rounded-md w-full p-4 shadow">
+                  <p className="text-lg">
+                    Showing results for{" "}
+                    <span className="font-semibold">
+                      &#x275D; keyword &#x275E;:
+                    </span>
+                  </p>
+                  <ul className=" divide-y divide-gray-100 [&>*]:py-2">
+                    <li>
+                      <a
+                        className="transition-all hover:text-emerald-600"
+                        href="#"
+                      >
+                        How to create a new component in Vue.js
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="transition-all hover:text-emerald-600"
+                        href="#"
+                      >
+                        How to create a new component in React.js
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="transition-all hover:text-emerald-600"
+                        href="#"
+                      >
+                        Next.js Routing
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="transition-all hover:text-emerald-600"
+                        href="#"
+                      >
+                        SSR - What is it?
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
               {/* Mobile responsive header start */}
               <div className="flex flex-grow items-center gap-5 lg:hidden">
@@ -450,13 +493,27 @@ function App() {
               </div>
             </article>
           </main>
-          <footer className="flex-auto max-w-screen-md mx-auto space-y-10 pb-16 lg:max-w-none">
-            <div className="relative">
+          <footer className="mx-auto max-w-screen-md space-y-10 pb-16">
+            <div className="relative h-8">
               <form className=" absolute inset-0 flex items-center justify-center md:justify-start gap-6">
                 <p className="text-sm text-zinc-600 dark:text-zinc-400">
                   Was this page helpful?
                 </p>
+                <div className="group h-8 overflow-hidden grid grid-cols-[1fr,1px,1fr] rounded-full border border-zinc-900/10">
+                  <button className="px-3 text-sm font-medium text-zinc-600 transition hover:bg-zinc-900/25 hover:text-zinc-900">
+                    yes
+                  </button>
+                  <div className=" bg-zinc-900/20"></div>
+                  <button className="px-3 text-sm font-medium text-zinc-600 transition hover:bg-zinc-900/25 hover:text-zinc-900">
+                    no
+                  </button>
+                </div>
               </form>
+            </div>
+            <div className="border-t border-zinc-900/5 flex flex-col items-center justify-between gap-5 pt-8 sm:flex-row">
+              <p className="text-xs text-zinc-600">
+                &#169; Copyright 2023. All rights reserved.
+              </p>
             </div>
           </footer>
         </div>
